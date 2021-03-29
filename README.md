@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="files/img/logo.svg" height="150" width="175" alt="dtmoney" />
+  <img src="files/img/logo.svg" height="100" width="175" alt="dtmoney" />
 </p>
 
 # Sobre o projeto
