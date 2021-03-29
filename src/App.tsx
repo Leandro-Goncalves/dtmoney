@@ -19,14 +19,16 @@ export function App() {
   }
 
   return (
-    <TransactionsProvider>
-      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal}/>
-      <Dashboard/>
-      <NewTransactionModal
-        isOpen={isNewTransactionModalOpen}
-        onRequestClose={handleCloseNewTransactionModal}
-      />
-      <GlobalStyle/>
-    </TransactionsProvider>
+    <AnimatePresence exitBeforeEnter>
+      <TransactionsProvider>
+        <Header onOpenNewTransactionModal={handleOpenNewTransactionModal}/>
+        <Dashboard/>
+        <NewTransactionModal
+          isOpen={isNewTransactionModalOpen}
+          onRequestClose={handleCloseNewTransactionModal}
+        />
+        <GlobalStyle/>
+      </TransactionsProvider>
+    </AnimatePresence>
   );
 }
